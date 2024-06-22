@@ -13,8 +13,23 @@ In this project, you will set up a virtualized environment that includes:
 
 **Windows Client Virtual Machines:** These VMs will join the domain and be used to simulate a typical networked environment.
 
-**Network Configuration:** Ensure communication between the server and client VMs, configure DNS, and optionally set up DHCP.
+**Network Configuration:** Ensure communication between the server and client VMs, configure DNS, and also set up DHCP.
 
 **Active Directory Configuration:** Promote the server to a domain controller, create a new AD forest, and manage users, groups, and policies.
 
+ **We will also set up the following as well**
+
+- Show the creation of an Organizational Unit for better user management.
+- Delve into the intricacies of Routing and Remote Access to emulate a corporate intranet.
+- Configure the Network Interface Card (NIC), ensuring local and internet connectivity.
+- Demonstrate mass user management by leveraging PowerShell to batch-add over 1000 users.
+- Interact with our client machine, simulating a login process using one of our newly added users.
+
 By the end of this project, you will have a fully functional AD environment in a virtual lab, enabling you to explore and experiment with various AD features and configurations.
+
+# **Technologies Used:**
+
+- Oracle VirtualBox
+- ISO Files for Windows Server 2019
+- Windows 10 pro
+- Powershell
