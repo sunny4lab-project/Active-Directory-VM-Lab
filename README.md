@@ -33,3 +33,53 @@ By the end of this project, you will have a fully functional AD environment in a
 - ISO Files for Windows Server 2019
 - Windows 10 pro
 - Powershell
+# **INSTALLATIONS**
+**Install Windows Server** 
+
+Prerequisites <details><summary>Click here for details</summary>
+
+- Oracle VirtualBox with the following preset.
+- Assign at least 4GB of RAM and 2 processors.
+- Attach the Windows Server ISO as a virtual CD/DVD drive.
+- Set up networking (preferably using a bridged network adapter). </details>
+  **Install Windows Server:**
+  
+Boot from the ISO and follow the installation prompts. Choose the appropriate edition (Standard/Datacenter) and select “Desktop Experience” for a GUI.
+<div align="center">
+<img width="515" alt="Screenshot 2024-06-22 184854" src="https://github.com/sunny4lab-project/Active-Directory-VM-Lab/assets/139194279/0bd941dd-74f7-4da0-b33c-65630b06242c"></div>
+
+
+# **Initial Configuration:**
+
+Set a strong administrator password.
+
+ **![image](https://github.com/sunny4lab-project/Active-Directory-VM-Lab/assets/139194279/fee169aa-994a-4888-be4f-c0256269ee25)**
+
+Configure network settings (static IP recommended).
+Install updates and necessary drivers.
+3. Configure Active Directory
+Promote the Server to a Domain Controller:
+
+Open Server Manager and select "Add roles and features."
+Choose "Role-based or feature-based installation."
+Select the server and then the "Active Directory Domain Services" role.
+Follow the prompts to install the role.
+Create a New Forest:
+
+After installation, promote the server to a domain controller.
+Create a new forest (e.g., "example.com").
+Set the forest and domain functional levels.
+Configure DNS (leave default settings unless specific changes are required).
+Set Directory Services Restore Mode (DSRM) password.
+Complete the Setup:
+
+The server will restart to complete the promotion.
+4. Configure DNS and DHCP (Optional)
+DNS Configuration:
+
+Ensure the AD DNS zone is created.
+Add necessary DNS records (A, PTR, etc.).
+DHCP Configuration (if not using static IPs):
+
+Install the DHCP server role.
+Configure DHCP scope and options.
