@@ -36,12 +36,14 @@ By the end of this project, you will have a fully functional AD environment in a
 # **INSTALLATIONS**
 **Install Windows Server** 
 
-Prerequisites <details><summary>Click here for details</summary>
+Prerequisites 
 
 - Oracle VirtualBox with the following preset.
 - Assign at least 4GB of RAM and 2 processors.
 - Attach the Windows Server ISO as a virtual CD/DVD drive.
-- Set up networking (preferably using a bridged network adapter). </details>
+- Set up networking (preferably using a bridged network adapter). 
+ <details><summary>Click here for details</summary> 
+  
   **Install Windows Server:**
   
 Boot from the ISO and follow the installation prompts. Choose the appropriate edition (Standard/Datacenter) and select “Desktop Experience” for a GUI.
@@ -165,4 +167,7 @@ This script simplifies the process of bulk-creating AD user accounts by automati
 - Select “Domain” and enter your domain name (e.g., "example.com").
 - Provide domain credentials when prompted.
 
-Setting up an Active Directory (AD) home lab provides practical experience in network and system administration by understanding AD basics, installing and configuring a domain controller, managing users and groups, configuring DNS, using PowerShell for automation, and implementing security practices. This prepares you for IT roles, relevant certifications, and managing AD-related projects. Future exploration can include advanced features like ADFS, integrating on-premises AD with Azure AD, developing advanced scripts with tools like Ansible, implementing AD backup and recovery, and enhancing security and compliance. This hands-on experience prepares you for real-world IT environments and continuously expands your skill set, making you a versatile IT professional.
+Setting up an Active Directory (AD) home lab provides practical experience in network and system administration by 
+understanding AD basics, installing and configuring a domain controller, managing users and groups, configuring DNS, using PowerShell for automation, and implementing security practices. This prepares you for IT roles, relevant certifications, and managing AD-related projects. Future exploration can include advanced features like ADFS, integrating on-premises AD with Azure AD, developing advanced scripts with tools like Ansible, implementing AD backup and recovery, and enhancing security and compliance. This hands-on experience prepares you for real-world IT environments and continuously expands your skill set, making you a versatile IT professional.
+
+</details>
